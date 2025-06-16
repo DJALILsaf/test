@@ -1,0 +1,68 @@
+name: bulksmsv1
+description: "تطبيق إرسال الرسائل الجماعية"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  file_picker: ^6.1.1
+  excel: ^4.0.6
+  provider: ^6.1.1
+  sqflite: ^2.3.2
+  path: ^1.8.3
+  flutter_local_notifications: ^16.3.2
+  flutter_sms: ^2.3.3
+  url_launcher: ^6.2.4
+  intl: ^0.20.2
+  permission_handler: ^11.4.0
+  path_provider: ^2.1.2
+  share_plus: ^7.2.2
+  font_awesome_flutter: ^10.7.0
+  timezone: ^0.9.4
+  uuid: ^4.3.3
+  flutter_native_splash: ^2.3.10
+  flutter_launcher_icons: ^0.13.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/fonts/
+
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Cairo-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Cairo-Medium.ttf
+          weight: 500
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/splash.png
+  android: true
+  ios: true
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/app_icon_foreground.png" 
